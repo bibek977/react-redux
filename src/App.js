@@ -4,8 +4,10 @@ import { useSelector,useDispatch } from 'react-redux';
 
 export default function App() {
 
-  const seletor = useSelector((myFunc)=>myFunc.changeNumber)
-  const mulseletor = useSelector((myFunc2)=>myFunc2.mulDiv)
+  // const seletor = useSelector((myFunc)=>myFunc.changeNumber)
+  const seletor = useSelector((state)=>state.changeNumber)
+  // const mulseletor = useSelector((myFunc2)=>myFunc2.mulDiv)
+  const mulseletor = useSelector((state)=>state.mulDiv)
   const dispatch = useDispatch()
   const container = {
     width : '100%',
